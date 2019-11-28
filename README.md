@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.org/bruno-source/skywatch-data-sources.svg?branch=master)](https://travis-ci.org/bruno-source/skywatch-data-sources)
 [![Coverage Status](https://coveralls.io/repos/github/bruno-source/skywatch-data-sources/badge.svg?branch=master)](https://coveralls.io/github/bruno-source/skywatch-data-sources?branch=master)
 
-Command-line interface to list SkyWatch's data sources
+A simple Command-line interface to list [SkyWatch's](https://www.skywatch.com/) available data sources.
+SkyWatch aggregates Earth observation data from many industry-leading sources into a single plataform.
 
 ![](docs/demo.gif)
 
@@ -25,7 +26,10 @@ $ skywatch-data-sources
 ╞═════════════════════════╪════════════╪══════════════╡
 │ TripleSat Constellation │ 21AT       │ 80cm         │
 ├─────────────────────────┼────────────┼──────────────┤
-...
+.
+.
+.
+
 
 $ skywatch-data-sources --help
 Usage: skywatch-data-sources [OPTIONS]
@@ -46,14 +50,33 @@ Python console:
 ╞═════════════════════════╪════════════╪══════════════╡
 │ TripleSat Constellation │ 21AT       │ 80cm         │
 ├─────────────────────────┼────────────┼──────────────┤
+.
+.
+.
 ```
 
-## Testing
+```
+>>> from skywatch_data_sources.sources import get_data_sources
+>>> sources = get_data_sources()
+>>> sources
+[{'Provider': '21AT', 'Resolution': '80cm', 'Source': 'TripleSat Constellation'}
+ .
+ .
+ .
+ {'Provider': 'Urthecast', 'Resolution': '1m', 'Source': 'Deimos-2'}]
+```
+
+## Development and Testing
+
+Clone the project, change directory and choose your favorite way to install
+```console
+$ git clone https://github.com/bruno-source/skywatch-data-sources
+$ cd skywatch-data-sources
+```
+
 - With Pipenv:
 
     ```console
-    $ git clone https://github.com/bruno-source/skywatch-data-sources
-    $ cd skywatch-data-sources
     $ pipenv install --dev
     $ pipenv run pytest
     ```
@@ -61,8 +84,6 @@ Python console:
 - With Virtualenv:
 
     ```console
-    $ git clone https://github.com/bruno-source/skywatch-data-sources
-    $ cd skywatch-data-sources
     $ python -m venv .venv
     $ source .venv/bin/activate
     $ pip install -r requirements.txt
