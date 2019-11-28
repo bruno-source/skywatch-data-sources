@@ -15,7 +15,7 @@ install:
 script:
   - pytest
 
-after_failure:
+after_success:
   - coveralls
 
 notifications:
