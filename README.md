@@ -37,9 +37,6 @@ Options:
   --help  Show this message and exit.
 ```
 
-
-
-
 Python console:
 ```
 >>> from skywatch_data_sources.cli import list_data_sources
