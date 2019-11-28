@@ -4,11 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
 
 [dev-packages]
 pre-commit = "*"
 pytest = "*"
 pytest-cov = "*"
+responses = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
