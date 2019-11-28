@@ -1,7 +1,7 @@
 # SkyWatch Data Sources
 
 [![Build Status](https://travis-ci.org/bruno-source/skywatch-data-sources.svg?branch=master)](https://travis-ci.org/bruno-source/skywatch-data-sources)
-[![Coverage Status](https://coveralls.io/repos/github/bruno-source/skywatch-data-sources/badge.svg?branch=update-docs)](https://coveralls.io/github/bruno-source/skywatch-data-sources?branch=update-docs)
+[![Coverage Status](https://coveralls.io/repos/github/bruno-source/skywatch-data-sources/badge.svg?branch=master)](https://coveralls.io/github/bruno-source/skywatch-data-sources?branch=master)
 
 Command-line interface to list SkyWatch's data sources
 
