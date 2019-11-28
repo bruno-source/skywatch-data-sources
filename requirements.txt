@@ -4,6 +4,7 @@ beautifulsoup4==4.8.1
 certifi==2019.9.11
 cfgv==2.0.1
 chardet==3.0.4
+Click==7.0
 coverage==4.5.4
 identify==1.4.7
 idna==2.8
@@ -22,6 +23,7 @@ requests==2.22.0
 responses==0.10.7
 six==1.13.0
 soupsieve==1.9.5
+tabulate==0.8.6
 toml==0.10.0
 urllib3==1.25.7
 virtualenv==16.7.8

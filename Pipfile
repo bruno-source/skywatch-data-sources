@@ -7,6 +7,8 @@ name = "pypi"
 requests = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+click = "*"
+tabulate = "*"
 
 [dev-packages]
 pre-commit = "*"
